@@ -2,12 +2,16 @@ import streamlit as st
 import pandas as pd
 import os
 
-# Custom CSS to set background color
+# Custom CSS to set background image
 st.markdown(
     """
     <style>
     .stApp {
-        background-color: gray;
+        background: url('https://cdn.pixabay.com/photo/2017/03/27/13/17/notebook-2178656_1280.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: ; /* Fallback color */
     }
     input[type="text"] {
         transition: background-color 0.3s ease;
